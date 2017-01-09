@@ -9,14 +9,17 @@ import { BaMenuService } from './theme';
 import {ComponentsHelper } from 'ng2-bootstrap';
 
 import { MENU } from './app.menu';
+
+import 'style!./app.scss';
+
 /*
  * App Component
  * Top Level Component
  */
 @Component({
   selector: 'app',
-  encapsulation: ViewEncapsulation.None,
-  styles: [require('normalize.css'), require('./app.scss')],
+  // // encapsulation: ViewEncapsulation.None,
+  // styleUrls: ['./app.scss'],
   template: `
     <main [ngClass]="{'menu-collapsed': isMenuCollapsed}" baThemeRun>
       <div class="additional-bg"></div>
